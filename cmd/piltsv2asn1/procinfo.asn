@@ -1,0 +1,18 @@
+ProcessInfo DEFINITIONS ::= BEGIN
+
+	CpuPercent ::= INTEGER
+	MemPercent ::= INTEGER
+	CpuTime    ::= UTF8String
+
+	SimpleProcessInfo ::= SEQUENCE {
+		pid INTEGER,
+		rss INTEGER,
+		cpu CpuPercent,
+		mem MemPercent,
+		state UTF8String,
+		time CpuTime
+	}
+
+	SpiArray ::= SEQUENCE OF SimpleProcessInfo
+
+END
