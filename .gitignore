@@ -23,3 +23,6 @@ go.work.sum
 
 # env file
 .env
+*.swp
+cmd/pijson2asn1/pijson2asn1
+cmd/piltsv2asn1/piltsv2asn1
